@@ -17,6 +17,7 @@ spec:
       containers:
         - name: manager
           image: {{ .Values.managerImage }}
+          imagePullPolicy: Always
           command:
             - /manager
           args:
