@@ -1,33 +1,44 @@
 # helm-chart
 
-## helm的chart仓库地址为：https://champly.github.io/helm-chart
+## helm chart address: https://champly.github.io/helm-chart
 
-## 本Chart仓库的使用方法
+## This helm chart useage.
 
-1、添加chart仓库
-```
-# helm repo add champly https://champly.github.io/helm-chart
+1. add helm chart
+
+``` shell
+$ helm repo add champly https://champly.github.io/helm-chart
+"champly" has been added to your repositories
 ```
 
-2、添加成功
+2. update helm chart
+
+``` shell
+$ helm repo update
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "champly" chart repository
+Update Complete. ⎈Happy Helming!⎈
 ```
-# helm repo list
-NAME  	URL                                   
+
+3. if add succ
+
+```
+$ helm repo list
+NAME   	URL
 champly	https://champly.github.io/helm-chart
 ```
 
-3、搜索chart包
-```
-# helm search repo champly
-NAME                             	    CHART VERSION	APP VERSION	DESCRIPTION
-champly/cluster-gateway-addon-manager	1.1.8        	1.0.0      	A Helm chart for Cluster-Gateway Addon-Manager
-champly/cluster-proxy                	0.1.1        	1.0.0      	A Helm chart for Cluster-Proxy OCM Addon
-champly/managed-serviceaccount       	0.1.0        	1.0.0      	A Helm chart for Managed ServiceAccount Addon
+4. search chart pack
+
+``` shell
+$ helm search repo champly
+NAME                 	CHART VERSION	APP VERSION	DESCRIPTION
+champly/cluster-proxy	0.1.1        	1.0.0      	A Helm chart for Cluster-Proxy OCM Addon
 ```
 
-4、安装chart包
+5. install helm chart
 ```
-# helm install xxx champly/cluster-proxy
+$ helm install xxx champly/cluster-proxy
 ```
 
-xxx为relaese名字
+*xxx means relaese's name*
