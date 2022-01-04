@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  cluster-proxy:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-01-04T10:50:02.906555+08:00"
+    description: A Helm chart for Cluster-Proxy OCM Addon
+    digest: 386ff71264c75fec79a8a66b6f5d6b5b0bc0cceebe8814200c55cd3a112d6d77
+    name: cluster-proxy
+    type: application
+    urls:
+    - https://champly.github.io/helm-chart/cluster-proxy-0.1.1.tgz
+    version: 0.1.1
+generated: "2022-01-04T10:50:02.906187+08:00"
