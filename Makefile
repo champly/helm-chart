@@ -6,3 +6,4 @@ build:
 
 update:
 	cp -r ~/go/src/open-cluster-management.io/cluster-proxy/charts/ ~/go/src/github.com/champly/helm-chart/
+	cp -r ~/go/src/open-cluster-management.io/managed-serviceaccount/charts/ ~/go/src/github.com/champly/helm-chart/
