@@ -1,37 +1,33 @@
-## Welcome to GitHub Pages
+# helm-chart
 
-You can use the [editor on GitHub](https://github.com/champly/helm-chart/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+## helm的chart仓库地址为：https://champly.github.io/helm-chart
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## 本Chart仓库的使用方法
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+1、添加chart仓库
+```
+# helm repo add myrepo https://champly.github.io/helm-chart
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+2、添加成功
+```
+# helm repo list
+NAME  	URL                                   
+champly	https://champly.github.io/helm-chart
+```
 
-### Jekyll Themes
+3、搜索chart包
+```
+# helm search repo champly
+NAME                             	    CHART VERSION	APP VERSION	DESCRIPTION
+champly/cluster-gateway-addon-manager	1.1.8        	1.0.0      	A Helm chart for Cluster-Gateway Addon-Manager
+champly/cluster-proxy                	0.1.1        	1.0.0      	A Helm chart for Cluster-Proxy OCM Addon
+champly/managed-serviceaccount       	0.1.0        	1.0.0      	A Helm chart for Managed ServiceAccount Addon
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/champly/helm-chart/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+4、安装chart包
+```
+# helm install xxx champly/cluster-proxy
+```
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+xxx为relaese名字
