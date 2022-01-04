@@ -1,0 +1,6 @@
+# Image of the managed service-account instances
+managerImage: quay.io/open-cluster-management/managed-serviceaccount:v0.1.0
+agentImage: quay.io/open-cluster-management/managed-serviceaccount:v0.1.0
+
+# Number of replicas
+replicas: 1
