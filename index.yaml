@@ -3,9 +3,9 @@ entries:
   cluster-gateway-addon-manager:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-01-04T14:34:17.125087+08:00"
+    created: "2022-01-05T17:41:36.735879+08:00"
     description: A Helm chart for Cluster-Gateway Addon-Manager
-    digest: 924fcfbe06edbc135260ac2a0b1586d4856ab2c349460e1b7a639979f277cc13
+    digest: e03287889dc61eeb01a06cd42dca6a692936d4b2cb6575dc3ba99975d0b436da
     name: cluster-gateway-addon-manager
     type: application
     urls:
@@ -14,7 +14,7 @@ entries:
   cluster-proxy:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-01-04T14:34:17.128323+08:00"
+    created: "2022-01-05T17:41:36.736339+08:00"
     description: A Helm chart for Cluster-Proxy OCM Addon
     digest: 7ad893101a456ea6a1a0252af43fc148e92658d27e10f4692f2a22d6ef9420ea
     name: cluster-proxy
@@ -25,7 +25,7 @@ entries:
   managed-serviceaccount:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-01-04T14:34:17.128548+08:00"
+    created: "2022-01-05T17:41:36.736712+08:00"
     description: A Helm chart for Managed ServiceAccount Addon
     digest: 0f854bde19c014230bce157d1e83ecb5d28cbfb7faf97f5df51ab535e6ebcc98
     name: managed-serviceaccount
@@ -33,4 +33,4 @@ entries:
     urls:
     - https://champly.github.io/helm-chart/managed-serviceaccount-0.1.0.tgz
     version: 0.1.0
-generated: "2022-01-04T14:34:17.123916+08:00"
+generated: "2022-01-05T17:41:36.734652+08:00"

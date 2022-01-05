@@ -19,5 +19,6 @@ spec:
       containers:
         - name: cluster-gateway-addon-manager
           image: {{ .Values.image }}
+          imagePullPolicy: Always
           args:
             - --leader-elect=true
